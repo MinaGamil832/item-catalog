@@ -69,7 +69,7 @@ class MenuItem(Base):
         }
 
 
-engine = create_engine('postgresql://catalog:11111@localhost/catalog')
+engine = create_engine('postgresql://grader:11111@localhost/catalog')
 connect_args = {'check_same_thread': False}
 
 Base.metadata.create_all(engine)
